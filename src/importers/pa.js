@@ -88,6 +88,7 @@ function findBeginEnd(planOrProf, station1X, station2X) {
         }
     }
 
+    if (begin == null) begin = planOrProf.length - 2;
     if (end == null) end = planOrProf.length - 1;
 
     return { begin, end };
